@@ -7,6 +7,8 @@ import { Component1Component } from './component1/component1.component';
 import { BusinessCardComponent } from './business-card/business-card.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { RainbowTypingDirective } from './rainbow-typing.directive';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ChildComponent } from './child/child.component';
     Component1Component,
     BusinessCardComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    RainbowTypingDirective,
+   
   ],
   imports: [
     BrowserModule,

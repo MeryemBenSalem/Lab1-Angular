@@ -25,13 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/rotating-card.css",
-              "src/assets/css/pe-icon-7-stroke.css",
-              "src/assets/css/bootstrap.css",
+              
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/rotating-card.js"    
+          
             ]
           },
           "configurations": {
