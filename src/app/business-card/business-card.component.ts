@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Input} from '@angular/core';
 
 @Component({
   selector: 'app-business-card',
@@ -7,12 +8,12 @@ import { Component } from '@angular/core';
 })
 export class BusinessCardComponent {
   
-  nom: string = 'Inna';
-  prenom: string = 'Corman';
-  job: string = 'Product Manager';
-  image: string = 'assets/images/rotating_card_profile.png';
-  citation: string = 'I\'m the new Sinatra, and since I made it here I can make it anywhere.';
-  description: string = 'Web design, Adobe Photoshop, HTML5, CSS3, Corel, and many others...';
-  motsCle: string = 'HTML, CSS, JS, PHP';
+  @Input() nom: string = 'Inna';
+  @Input() prenom: string = 'Corman';
+  @Input() job: string = 'Product Manager';
+  @Input() image: string = 'assets/images/rotating_card_profile.png';
+  @Input() citation: string = 'I\'m the new Sinatra, and since I made it here I can make it anywhere.';
+  @Input() description: string = 'Web design, Adobe Photoshop, HTML5, CSS3, Corel, and many others...';
+  @Input() motsCle: string = 'HTML, CSS, JS, PHP';
 
 }

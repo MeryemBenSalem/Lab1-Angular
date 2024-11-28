@@ -1,0 +1,34 @@
+<div class="cv-container">
+  <!-- Left Section: List of CVs -->
+  <div class="cv-list-container">
+    <h2 class="list-title">CV List</h2>
+    <div class="cv-list">
+      <div 
+        class="cv-item" 
+        *ngFor="let cv of cvList" 
+        (click)="selectCv(cv)"
+        [class.active]="cv === selectedCv"
+      >
+        <img [src]="cv.image" alt="{{ cv.nom }} {{ cv.prenom }}" class="cv-image">
+        <div class="cv-details">
+          <h4>{{ cv.nom }} {{ cv.prenom }}</h4>
+          <p>{{ cv.job }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Section: Selected CV Detail -->
+  <div class="cv-detail-container">
+    <app-business-card
+      *ngIf="selectedCv"
+      [nom]="selectedCv.nom"
+      [prenom]="selectedCv.prenom"
+      [job]="selectedCv.job"
+      [image]="selectedCv.image"
+      [citation]="selectedCv.citation"
+      [description]="selectedCv.description"
+      [motsCle]="selectedCv.motsCle"
+    ></app-business-card>
+  </div>
+</div>
