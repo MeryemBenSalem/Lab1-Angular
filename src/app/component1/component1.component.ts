@@ -8,10 +8,7 @@ import { Component } from '@angular/core';
 export class Component1Component {
   public color: string = ''; 
 
-  // Méthode qui met à jour la couleur lorsqu'on écrit dans l'input
-  updateColor(newColor: string) {
-    this.color = newColor;
-  }
+ 
   // Méthode pour réinitialiser la couleur par défaut
   resetColor(divElement: HTMLElement) {
     this.color = ''; // Réinitialiser la couleur de la variable
