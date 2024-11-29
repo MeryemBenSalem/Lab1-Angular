@@ -12,10 +12,6 @@ export class RainbowTypingDirective {
   @HostBinding('style.borderColor') borderColor: string = '';
   
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {
-    this.changeColor();
-  }
-
   // Génère une couleur aléatoire à partir de la liste des couleurs
   private getRandomColor(): string {
     const randomIndex = Math.floor(Math.random() * this.colors.length);
