@@ -7,7 +7,7 @@ import { Component, Output, EventEmitter,Input } from '@angular/core';
 })
 export class ChildComponent {
   myFavoriteColor: string = 'lightgreen';  
-  @Output() colorChanged: EventEmitter<string> = new EventEmitter(); 
+  @Output() colorChanged = new EventEmitter<string>();
   changeColor(): void {
     this.colorChanged.emit(this.myFavoriteColor);  // Envoi de la couleur au parent
   } 
